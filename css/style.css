@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/0.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+.nav-bar h1{
+    float: left;
+    color: #fff;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.nav-bar span{
+    color: crimson;
+}
+
+.main{
+    max-width: 1800px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+}
+
+.title h1:nth-child(1){
+    animation-delay: 1s;
+}
+
+.title h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+.title h1:nth-child(3){
+    animation: text_reveal_name ease forwards;
+    animation-delay: 3s;
+}
+
+.title h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+}
+
+.title h1:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+
+.title h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+
+.title h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+.button{
+    position: absolute;
+    top: 68%;
+    left: 29%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 2px solid crimson;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover{
+    background-color: crimson;
+    color: #fff;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+#profile .container{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#profile .profile-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+#profile .profile-title span{
+    color: crimson;
+}
+#profile .profile-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#profile .profile-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(77, 90, 117, 0.5),rgba(77, 90, 117, 0.5)), url(../img/1.jpg);
+    background-position:center;
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+#profile .profile-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#profile .profile-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{
+        color: crimson;
+        font-weight: 500px;
+    }
+}

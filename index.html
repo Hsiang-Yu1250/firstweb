@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>WELLCOME</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-
 <body>
+    <script src="js/script.js"></script>
     <header>
         <div class="main">
             <div class="nav-bar">
-                <h1><span>F</span>JCU <span>C</span>SIE</h1>
+                <h1 id='123'><span>F</span>JCU <span>C</span>SIE</h1>
             </div>
             <ul>
                 <li class="active"><a href="#">Home</a></li>
@@ -25,13 +27,13 @@
         </div>
         <div class="button">
             <a href="https://www.facebook.com/profile.php?id=100002242860595" class="btn">Facebook</a>
-            <a href="https://www.instagram.com/hsiang._.yu/" class="btn">Instagram</a>
+            <a href="https://www.instagram.com/h.y_0521/" class="btn">Instagram</a>
         </div>
     </header>
     <section id="profile">
         <div class="profile container">
             <div class="profile-top">
-                <h1 class="profile-title">Prof<span>i</span>le</h1>
+                <h1 class="profile-title" id="te">Prof<span>i</span>le</h1>
             </div>
             <div class="profile-bottom">
                 <div class="profile-item">
@@ -48,7 +50,11 @@
                     <p>Taking Photos</p>
                 </div>
             </div>
+            <button id="btn1">Click</button>
     </section>
+   <div id="div1" style="display: none;">
+       <img src="img/like.jpg">
+   </div>
 </body>
 
 </html>
